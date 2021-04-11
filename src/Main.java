@@ -7,7 +7,7 @@ public class Main {
 public static boolean matches(String text, String regex) {
     try {
         return Pattern.matches(regex, text);
-    } catch (PatternSyntaxException e) {
+    } catch (PatternSyntaxException e) { // Тут надо найти вариант без исключения, тк это долго
         return false;
     }
 }
